@@ -1,0 +1,26 @@
+/* Global variables */
+:root{
+    --orange: #FF451A;
+    --gray_text: #EDEDED;
+    --gray_object: #4A4A4A;
+    --gray_background: #1A1A1A;
+}
+body {
+    background-color: var(--gray_background);
+    color: var(--gray_text);
+    font-family: 'Onest', sans-serif;
+}
+
+/* main */
+
+/* sponsors */
+
+/* whoAreWe */
+
+/* projects */
+
+/* timeLine */
+
+/* meetUs */
+
+/* contact */
