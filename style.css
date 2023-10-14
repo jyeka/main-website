@@ -16,33 +16,35 @@ body {
 .main-container {
     height: 100%;
     min-height: 100vh;
-    border: 2px solid green;
-    position: relative;
-
+    /* border: 2px solid green;*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .background-top {
     width: 10%;
     float: left;
-    padding: 0px;
-    border: 2px solid blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 2px solid blue; */
 }
 
+
+.background-bottom-img {
+    float: right;
+}
 
 .background-bottom {
     width: 10%;
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 0px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
-
-.background-bottom-img {
-    float: right;
-}
-
 
 
 /* sponsors */
