@@ -16,7 +16,313 @@ body {
 /* sponsors */
 
 /* whoAreWe */
+body, html {
+    padding: 0;
+    margin: auto;
+    height: 100%;
+}
+  
+#whoAreWe {
+    padding: 0;
+    margin: auto;
+    height: 100%;
+}
 
+#whoAreWe_bg {
+    /* The image used */
+    background-image: url("assets/image/zd1.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0) brightness(80%);
+}
+
+#whoAreWe_h1 {
+    position: absolute;
+    white-space: pre;
+    font-weight: bold;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+#whoAreWe_h2 {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    font-size: 2.3vw;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Hovers */
+
+#whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(2.5px) brightness(60%);
+}
+
+#whoAreWe:hover > #whoAreWe_h1{
+    opacity: 1;
+}
+
+#whoAreWe:hover > #whoAreWe_h2{
+    opacity: 1;
+}
+
+/* Scaling */
+
+@media (max-width: 550px) {
+  #whoAreWe_h1 {
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13vw;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 60%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vh;
+    opacity: 1;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
+
+@media (min-width: 551px) and (max-width: 640px){
+  #whoAreWe_h1 {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vh;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 60%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    font-size: 3.6vh;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
+
+@media (min-width: 641px ) and (max-width: 960px){
+  #whoAreWe_h1 {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9vh;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 3.8vh;
+    opacity: 1;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1024px) {
+  #whoAreWe_h1 {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9vw;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 3.6vw;
+    opacity: 1;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  #whoAreWe_h1 {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    opacity: 1;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1499px) {
+  #whoAreWe_h1 {
+    top: 16%;
+    left: 50%;
+    font-size: 7.5vw;
+    transform: translate(-50%, -50%);
+  }
+  #whoAreWe_h2 {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+  #whoAreWe_h1 {
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7.5vw;
+  }
+  #whoAreWe_h2 {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1601px) {
+  #whoAreWe_h1 {
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12vh;
+  }
+  #whoAreWe_h2 {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    font-size: 5vh;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+/* Phone */
+@media screen and (max-device-width: 480px) and (max-device-width: 700px){
+  #whoAreWe_h1 {
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13.5vw;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    opacity: 1;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
+
+@media screen and (min-device-width: 700px) and (max-device-width: 912px){
+  #whoAreWe_h1 {
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13.5vw;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 53%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    opacity: 1;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
+
+@media screen and (max-device-height: 700px) and (max-device-width: 912px){
+  #whoAreWe_h1 {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13.5vw;
+    opacity: 1;
+  }
+  #whoAreWe_h2 {
+    top: 53%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    opacity: 1;
+  }
+  #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+  #whoAreWe:hover > #whoAreWe_bg{
+    filter: blur(1px) brightness(50%);
+  }
+}
 /* projects */
 
 /* timeLine */
