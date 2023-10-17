@@ -54,11 +54,11 @@ body {
 }
 
 .first-logo-img {
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 .menu-button-img {
-    transform: scale(0.65);
+    transform: scale(0.35);
 }
 
 /* farotech logo and text */
