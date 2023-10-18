@@ -330,3 +330,68 @@ body, html {
 /* meetUs */
 
 /* contact */
+
+#contact {
+	background-color: rgb(26, 26, 26);
+  color: rgb(237, 237, 237);
+	font-size: 3.5vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	min-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2vw;
+}
+
+#contact_logo{
+	flex: 1;
+	margin-left: 2vw;
+	margin-right: 7vw;
+}
+
+
+#contact_contact{
+	flex: 1;
+	text-align: left;
+}
+
+#contact_media{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 7vw;
+	margin-left: 7vw;
+}
+
+		
+a{
+color: rgb(237, 237, 237);
+text-decoration: none;
+}
+
+#logo{
+max-width: 40vw;
+max-height: 40vh;
+}
+
+#yt_logo{
+width: 12vh;
+height: 10.75vh;
+margin-top: 7vh;
+margin-bottom: 1vw;
+}
+
+#ig_logo{
+width: 12vh;
+height: 12vh;
+margin-bottom: 1vw;
+}
+
+#tt_logo{
+width: 12vh;
+height: 12vh;
+margin-bottom: 1vw;
+}
