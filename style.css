@@ -23,9 +23,10 @@ body, html {
 }
   
 #whoAreWe {
-    padding: 0;
-    margin: auto;
-    height: 100%;
+  padding: 0;
+  margin: auto;
+  height: 100%;
+  position: relative;
 }
 
 #whoAreWe_bg {
@@ -328,5 +329,14 @@ body, html {
 /* timeLine */
 
 /* meetUs */
+#meetUs_bg{
+  background-color: #4A4A4A;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 50%;
+}
 
 /* contact */
