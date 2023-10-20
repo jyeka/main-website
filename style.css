@@ -12,6 +12,146 @@ body {
 }
 
 /* main */
+/* main */
+
+.main-container {
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* background */
+
+.background-top {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background-top-img {
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.background-bottom-img {
+    float: right;
+    pointer-events: none;
+    user-select: none;
+}
+
+.background-bottom {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* and first logo */
+.first-logo-div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.first-logo{
+    display: flex;
+    flex-direction: column;
+}
+.first-logo-img {
+    transform: scale(0.8);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+
+/* farotech logo and text */
+
+.farotech-logo-container {
+    transform: scale(0.8);
+}
+
+.farotech-logo-text {
+    font-size: 5vh;
+    line-height: 1vh;
+    top: 0;
+}
+
+/* menu */
+
+
+a,
+button {
+    cursor: pointer;
+}
+
+.hamburger {
+    font-size: 8vh;
+    color: var(--orange);
+    background: none;
+    border: none;
+}
+
+nav {
+    position: absolute;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+}
+
+.close-x {
+    user-select: none;
+    cursor: pointer;
+}
+
+.x-img {
+    filter: invert(1);
+    width: 25px;
+}
+
+.navigation {
+    background: rgba(0, 0, 0);
+    position: absolute;
+    width: 0;
+    top: 0;
+    overflow-x: hidden;
+    right: 0;
+    height: 100vh;
+    animation-name: nav-rollout;
+    transition: width 0.5s ease;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--gray_text);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+}
+
+.navigation ul li {
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 2vh;
+    padding: 20px 30px;
+    border-bottom: 1pt solid var(--orange);
+}
+
+
 
 /* sponsors */
 
