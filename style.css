@@ -1,4 +1,3 @@
-
 /* Global variables */
 :root{
     --orange: #FF451A;
@@ -12,6 +11,7 @@ body {
     font-family: 'Onest', sans-serif;
 }
 
+/* main */
 /* main */
 
 .main-container {
@@ -171,7 +171,7 @@ body, html {
 
 #whoAreWe_bg {
     /* The image used */
-    background-image: url("assets/image/whoAreWe/zd1.jpg");
+    background-image: url("assets/whoAreWe/team_photo.jpg");
   
     /* Full height */
     height: 100%;
@@ -579,7 +579,7 @@ body, html {
 }
 
 .wrapper i:first-child{
-  left: 0px;
+  left: 0;
 }
 
 .wrapper i:last-child{
@@ -594,7 +594,7 @@ body, html {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scrollbar-width: 0;
+  scrollbar-width: none;
 }
 
 .carousel::-webkit-scrollbar{
@@ -653,9 +653,8 @@ body, html {
 }
 
 .card h2{
-  font-weight: 500;
   font-size: 1.56rem;
-  font-weight: bold;
+  font-weight: 500;
   margin: 30px 10px 5px;
   color: black;
 }
