@@ -23,14 +23,15 @@ body, html {
 }
   
 #whoAreWe {
-    padding: 0;
-    margin: auto;
-    height: 100%;
+  padding: 0;
+  margin: auto;
+  height: 100%;
+  position: relative;
 }
 
 #whoAreWe_bg {
     /* The image used */
-    background-image: url("assets/image/zd1.jpg");
+    background-image: url("assets/image/whoAreWe/zd1.jpg");
   
     /* Full height */
     height: 100%;
@@ -328,5 +329,176 @@ body, html {
 /* timeLine */
 
 /* meetUs */
+#meetUs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 35px;
+  position: relative;
+}
 
+.wrapper{
+  transform: translate(0, 30%);
+  max-width: 1500px;
+  width: 90%;
+  position: relative;
+}
+
+.wrapper i{
+  color: black;
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 1.25rem;
+  transform: translate(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper i:first-child{
+  left: 0px;
+}
+
+.wrapper i:last-child{
+  right: -40px;
+}
+
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3));
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel :where(.card, .img){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.no-transition{
+  scroll-behavior: auto;
+}
+
+/* Przeciaganie */
+/* .carousel.dragging{
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+  pointer-events: none;
+} */
+
+.carousel .card{
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card .img{
+  background: #FF451A;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+}
+
+.card .img img{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.card h2{
+  font-weight: 500;
+  font-size: 1.56rem;
+  font-weight: bold;
+  margin: 30px 10px 5px;
+  color: black;
+}
+
+.card span{
+  color: #6a6d78;
+  font-size: 1.31rem;
+}
+
+
+@media screen and (max-width: 1400px){
+  .wrapper .carousel{
+    grid-auto-columns: calc((100% / 1.96));
+  }
+}
+
+@media screen and (max-width: 750px){
+  .wrapper .carousel{
+    grid-auto-columns: 108%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .wrapper .carousel{
+    grid-auto-columns: 110%;
+  }
+}
+
+@media screen and (max-device-width: 480px) and (max-device-width: 912px){
+  .carousel .card{
+    height: 75vw;
+  }
+  .wrapper .carousel{
+    grid-auto-columns: 104%;
+  }
+
+  .wrapper i:first-child{
+    transform: scale(2.5);
+    left: -20px;
+  }
+  
+  .wrapper i:last-child{
+    transform: scale(2.5);
+    right: -10px;
+  }
+
+  .card .img{
+    transform: scale(1.8) translate(0, -20%);
+  }
+
+  .card h2{
+    font-size: 4vh;
+    font-weight: 30;
+    margin: 30px 10px 5px;
+    color: black;
+  }
+  
+  .card span{
+    color: #6a6d78;
+    font-size: 2vh;
+  }
+}
 /* contact */
