@@ -31,7 +31,50 @@
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="projects">
-
+            <h2 class="projectsTitle">Nasze projekty</h2>
+              <div class="projectsSlider">
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=6" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=7" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <div class="project">
+                      <img src="https://picsum.photos/200/300?t=8" alt="" class="pic">
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                  </div>
+                  <script>
+                      const scrollable = document.querySelector(".projectsSlider");
+                      scrollable.addEventListener("wheel",function(e){
+                      if (e.wheelDelta > 0){
+                          this.scrollLeft -=200;}
+                      else{
+                          this.scrollLeft +=200;}
+                      }, {passive: true});
+                </script>    
+              </div>
         </div>
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
