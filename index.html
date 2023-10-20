@@ -9,12 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
-    
 </head>
     <body>
-
-        <h1> Hello World! </h1>
-
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="main">
 
@@ -90,67 +86,14 @@
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="whoAreWe">
-
+            <div id="whoAreWe_bg"></div>
+            <h1 id="whoAreWe_h1"> Kim jesteśmy? </h1>
+            <h2 id="whoAreWe_h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum tristique mollis. Vestibulum in quam at neque aliquet aliquet vitae nec magna. In in urna a lectus varius accumsan. Vivamus interdum rutrum enim quis placerat. Integer porttitor sem nulla. Maecenas at erat ut massa tincidunt pulvinar. Ut fringilla dolor ac velit interdum pulvinar. </h2>
         </div>
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="projects">
-            <h2 class="projectsTitle">Nasze projekty</h2>
-           
-            <div id="projectsSlider">  
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div>
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div>
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div>
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div>
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div>
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=6" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div>
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=7" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div>
-                <div class="project">
-                    <img src="https://picsum.photos/200/300?t=8" alt="" class="pic">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                </div> 
-                <script>
-                    (function() {
-                function scrollHorizontally(f) {
-                    
-                    f = window.event || f;
-                    var delta = Math.max(-1, Math.min(1, (f.wheelDelta || -f.detail)));
-                    document.getElementById('projectsSlider').scrollLeft -= (delta * 200); // Multiplied by 40
-                    f.preventDefault();
-                }
-                if (document.getElementById('projectsSlider').addEventListener) {
-                    // IE9, Chrome, Safari, Opera
-                    document.getElementById('projectsSlider').addEventListener("mousewheel", scrollHorizontally, false);
-                    // Firefox
-                    document.getElementById('projectsSlider').addEventListener("DOMMouseScroll", scrollHorizontally, false);
-                } else {
-                    // IE 6/7/8
-                    document.getElementById('projectsSlider').attachEvent("onmousewheel", scrollHorizontally);
-                }
-                        })();
-                        </script>
-            </div>
+
         </div>
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
@@ -160,17 +103,68 @@
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="meetUs">
-
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card" id="card1">
+                        <div class="img"><img src="assets/image/meetUs/team/1.png" alt="1" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>sssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/2.png" alt="2" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/3.png" alt="3" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/4.png" alt="4" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/5.jpg" alt="5" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/6.jpg" alt="6" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/7.jpg" alt="7" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/8.jpg" alt="8" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/9.jpg" alt="9" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssss</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/image/meetUs/team/10.jpg" alt="10" dragging="false"></img></div>
+                        <h2>Janek</h2>
+                        <span>ssssssssssssssssssssssssssssss</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
         </div>
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="contact">
-
         </div>
 
-    
-       
 
     </body>
-</html>  
-           
+</html>
