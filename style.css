@@ -31,9 +31,16 @@ body {
     left: 0;
 }
 
+.background-top-img {
+    pointer-events: none;
+    user-select: none;
+}
+
 
 .background-bottom-img {
     float: right;
+    pointer-events: none;
+    user-select: none;
 }
 
 .background-bottom {
@@ -44,17 +51,22 @@ body {
 }
 
 /* and first logo */
-
-.first-logo{
+.first-logo-div{
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     right: 0;
+}
+.first-logo{
+    display: flex;
     flex-direction: column;
 }
-
 .first-logo-img {
     transform: scale(0.8);
+    pointer-events: none;
+    user-select: none;
 }
 
 
@@ -72,26 +84,60 @@ body {
 }
 
 /* menu */
-/* nie dziala :)
+
+
 a,
 button {
     cursor: pointer;
 }
 
+.hamburger {
+    font-size: 8vh;
+    color: var(--orange);
+    background: none;
+    border: none;
+}
+
 nav {
     position: absolute;
-    top: 100px;
-    right: 50px;
-    width: 250px;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+}
+
+.close-x {
+    user-select: none;
+    cursor: pointer;
+}
+
+.x-img {
+    filter: invert(1);
+    width: 25px;
 }
 
 .navigation {
-    position: fixed;
-    right: -500px;
-    width: 350px;
-    height: 100%;
-    background-color: #000;
-    transition: .5s;
+    background: rgba(0, 0, 0);
+    position: absolute;
+    width: 0;
+    top: 0;
+    overflow-x: hidden;
+    right: 0;
+    height: 100vh;
+    animation-name: nav-rollout;
+    transition: width 0.5s ease;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--gray_text);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
 }
 
 .navigation ul li {
@@ -99,63 +145,12 @@ nav {
     text-align: right;
     text-transform: uppercase;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 2vh;
     padding: 20px 30px;
-    border-bottom: 1pt solid #252525;
-}
-
-.hamburger,
-.bar {
-    position: fixed;
-}
-
-.hamburger {
-    display: block;
-    top: 10%;
-    left: 95%;
-    width: 30px;
-    height: 30px;
-    transform: translateY(-50%);
-    border: 0;
-    background: 0 0;
-}
-
-.bar {
-    top: 3px;
-    background: #000;
-    width: 100%;
-    height: 4px;
-    transition: all .3s ease-in;
-}
-
-#bar2 {
-    top: 11px;
-}
-
-#bar3 {
-    top: 19px;
-}
-
-.navigation.active {
-    right: 0;
-}
-
-.hamburger.open #bar1 {
-    background-color: var(--orange);
-    transform: rotate(45deg) translate(6px, 5px);
-}
-
-.hamburger.open #bar2 {
-    background-color: transparent;
-}
-
-.hamburger.open #bar3 {
-    background-color: var(--orange);
-    transform: rotate(-45deg) translate(6px, -5px);
+    border-bottom: 1pt solid var(--orange);
 }
 
 
-*/
 
 /* sponsors */
 

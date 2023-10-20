@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
 </head>
-    <body>
+    <body onscroll="hide()">
         <script src="script.js"></script>
         <!-- header: background, frc logo top left, our logo in the middle, text under our logo  -->
         <div id="main">
 
 
-            <div class="main-container">
+            <div class="main-container" >
  
                 <div class="background-top">
                     <img class="background-top-img" src="assets/szlaczki 2.png" alt="background">
@@ -32,31 +32,31 @@
                         <h3> Do roboty </h3>
                     </div>
                 </div>
-
-                <div class="first-logo">
-                    <a href="https://www.firstinspires.org/robotics/frc"> <img class="first-logo-img" src="assets/FIRST_Vertical_OneColor_reverse 1.png"> </a>
+                <div class="first-logo-div">
+                    <div class="first-logo">
+                        <a href="https://www.firstinspires.org/robotics/frc"> <img class="first-logo-img" src="assets/FIRST_Vertical_OneColor_reverse 1.png"> </a>
+                     </div>
+                     <button class="hamburger" onclick="show()">
+                        <i class="fa fa-bars"></i>
+                     </div>
                 </div>
                 
-                <div class="navigation">
-                    <!--
-
-                        <button class="hamburger" onclick="show()">
-                            <div id="bar1" class="bar"></div>
-                            <div id="bar2" class="bar"></div>
-                            <div id="bar3" class="bar"></div>
-                        </button>
-                        
-                        <nav>
-                            <ul>
-                                <li><a>Home</a></li>
-                                <li><a>About</a></li>
-                                <li><a>Blog</a></li>
-                                <li><a>Contact</a></li>
-                            </ul>
-                        </nav>
-                    -->
-                </div>
                 
+            </div>
+            
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li class="close-x" onclick="hide()"> <img class="x-img" src="assets/x-symbol-svgrepo-com.svg"> </li>
+                        <li><a href="#sponsors">Sponsorzy</a></li>
+                        <li><a href="#whoAreWe">Kim jesteśmy?</a></li>
+                        <li><a href="#projects">Projekty</a></li>
+                        <li><a href="#timeline">Oś czasu</a></li>
+                        <li><a href="#meetUs">Poznaj nas</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+
             </div>
 
         </div>
