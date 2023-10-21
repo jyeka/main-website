@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -63,7 +64,70 @@
         </div>
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="sponsors">
-
+            <h2 class="sponsorsTitle">Sponsorzy</h2>
+           
+            <div id="sponsorsSlider">  
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                    <img src="/assets/sponsors/bielany.png" alt="" class="pic">
+                    </a>
+                </div>
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                    <img src="/assets/sponsors/first.png" alt="" class="pic">
+                    </a>
+                </div> 
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                        <img src="/assets/sponsors/polMare.jpg" alt="" class="pic">
+                    </a>
+                </div> 
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                        <img src="/assets/sponsors/pulsBiznesu.png" alt="" class="pic">
+                    </a>
+                </div>
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                        <img src="/assets/sponsors/santander.png" alt="" class="pic">
+                    </a>
+                </div>
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                        <img src="/assets/sponsors/stem.png" alt="" class="pic">
+                    </a>
+                </div>
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                        <img src="/assets/sponsors/wawa.png" alt="" class="pic">
+                    </a>
+                </div>
+                <div class="sponsor">
+                    <a href="https://www.firstinspires.org/robotics/frc">
+                        <img src="/assets/sponsors/WUT.png" alt="" class="pic">
+                    </a>
+                </div>
+            </div>
+            <script>
+        (function() {
+    function scrollHorizontally(f) {
+        
+        f = window.event || f;
+        var delta = Math.max(-1, Math.min(1, (f.wheelDelta || -f.detail)));
+        document.getElementById('sponsorsSlider').scrollLeft -= (delta * 400); // Multiplied by 40
+        f.preventDefault();
+    }
+    if (document.getElementById('sponsorsSlider').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('sponsorsSlider').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('sponsorsSlider').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('sponsorsSlider').attachEvent("onmousewheel", scrollHorizontally);
+    }
+            })();
+            </script>
         </div>
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
@@ -76,49 +140,61 @@
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
         <div id="projects">
             <h2 class="projectsTitle">Nasze projekty</h2>
-              <div class="projectsSlider">
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=6" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=7" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <div class="project">
-                      <img src="https://picsum.photos/200/300?t=8" alt="" class="pic">
-                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
-                  </div>
-                  <script>
-                      const scrollable = document.querySelector(".projectsSlider");
-                      scrollable.addEventListener("wheel",function(e){
-                      if (e.wheelDelta > 0){
-                          this.scrollLeft -=200;}
-                      else{
-                          this.scrollLeft +=200;}
-                      }, {passive: true});
-                </script>    
-              </div>
+           
+            <div id="projectsSlider">  
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div>
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div>
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div>
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div>
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div>
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=6" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div>
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=7" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div>
+                <div class="project">
+                    <img src="https://picsum.photos/200/300?t=8" alt="" class="pic">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae placeat enim est qui inventore vero quaerat nisi.</p>
+                </div> 
+                <script>
+                    (function() {
+                function scrollHorizontally(f) {
+                    
+                    f = window.event || f;
+                    var delta = Math.max(-1, Math.min(1, (f.wheelDelta || -f.detail)));
+                    document.getElementById('projectsSlider').scrollLeft -= (delta * 200); // Multiplied by 40
+                    f.preventDefault();
+                }
+                if (document.getElementById('projectsSlider').addEventListener) {
+                    // IE9, Chrome, Safari, Opera
+                    document.getElementById('projectsSlider').addEventListener("mousewheel", scrollHorizontally, false);
+                    // Firefox
+                    document.getElementById('projectsSlider').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+                } else {
+                    // IE 6/7/8
+                    document.getElementById('projectsSlider').attachEvent("onmousewheel", scrollHorizontally);
+                }
+                        })();
+                        </script>
+            </div>
         </div>
 
         <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
