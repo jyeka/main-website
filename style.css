@@ -12,153 +12,9 @@ body {
   background-color: var(--gray_background);
   color: var(--gray_text);
   font-family: 'Onest', sans-serif;
-    background-color: var(--gray_background);
-    color: var(--gray_text);
-    font-family: 'Onest', sans-serif;
-    overflow-x: hidden;
 }
 
 /* main */
-/* main */
-
-.main-container {
-    height: 100%;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* background */
-
-.background-top {
-    width: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.background-top-img {
-    pointer-events: none;
-    user-select: none;
-}
-
-
-.background-bottom-img {
-    float: right;
-    pointer-events: none;
-    user-select: none;
-}
-
-.background-bottom {
-    width: 10%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-/* and first logo */
-.first-logo-div{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.first-logo{
-    display: flex;
-    flex-direction: column;
-}
-.first-logo-img {
-    transform: scale(0.8);
-    pointer-events: none;
-    user-select: none;
-}
-
-
-
-/* farotech logo and text */
-
-.farotech-logo-container {
-    transform: scale(0.8);
-}
-
-.farotech-logo-text {
-    font-size: 5vh;
-    line-height: 1vh;
-    top: 0;
-}
-
-/* menu */
-
-
-a,
-button {
-    cursor: pointer;
-}
-
-.hamburger {
-    font-size: 8vh;
-    color: var(--orange);
-    background: none;
-    border: none;
-}
-
-nav {
-    position: absolute;
-    width: 90%;
-    text-decoration: none;
-    color: black;
-}
-
-.close-x {
-    user-select: none;
-    cursor: pointer;
-}
-
-.x-img {
-    filter: invert(1);
-    width: 25px;
-}
-
-.navigation {
-    background: rgba(0, 0, 0);
-    position: absolute;
-    width: 0;
-    top: 0;
-    overflow-x: hidden;
-    right: 0;
-    height: 100vh;
-    animation-name: nav-rollout;
-    transition: width 0.5s ease;
-
-}
-
-.navigation a {
-    text-decoration: none;
-    color: var(--gray_text);
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 100%;
-}
-
-.navigation ul li {
-    color: #fff;
-    text-align: right;
-    text-transform: uppercase;
-    list-style-type: none;
-    font-size: 2vh;
-    padding: 20px 30px;
-    border-bottom: 1pt solid var(--orange);
-}
-
-
 
 /* sponsors */
 /* sponsors */
@@ -226,7 +82,7 @@ body, html {
     margin: auto;
     height: 100%;
 }
-
+  
 #whoAreWe {
   padding: 0;
   margin: auto;
@@ -236,7 +92,7 @@ body, html {
 
 #whoAreWe_bg {
     /* The image used */
-    background-image: url("assets/whoAreWe/team_photo.jpg");
+    background-image: url("assets/image/whoAreWe/zd1.jpg");
   
     /* Full height */
     height: 100%;
@@ -785,6 +641,7 @@ body, html {
   }
 }
 /* contact */
+
 /* Global variables */
 :root{
     --orange: #FF451A;
@@ -1330,69 +1187,6 @@ body, html {
     opacity: 0.2;
     filter: blur(8px);
 }
-  }
-  #projectsSlider {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  display: grid;
-  gap: 10px;
-  grid-auto-flow: column;
-  overflow-x: auto;
-  overflow-y: hidden ;
-  overscroll-behavior-inline: contain;
-  background-color: #4A4A4A;
-  width: max-content;
-  height: max-content;
-  scroll-behavior: smooth;
-  }
-  #projectsSlider::-webkit-scrollbar {
-  height: 6px;
-  }
-  #projectsSlider::-webkit-scrollbar-thumb {
-  background-color: var(--orange);
-  }
-  #projectsSlider::-webkit-scrollbar-track {
-  background-color: var(--gray_background);
-  }
-  
-  .project {
-  position: relative;
-  text-align: center;
-  width: fit-content;
-  padding: 10%;
-  /scroll-snap-align: center;
-  
-  }
-  
-  .project > img {
-    position: relative;
-    object-fit: contain;
-    transition: opacity 100ms;
-    justify-self: center;
-    border-radius: 10%;
-    align-self: center;
-    place-self: center;
-    height: 300px;
-    width: 200px;
-  }
-  .text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate( -50%, -50% );
-  align-self: center;
-  opacity: 0;
-  transition: opacity 100ms;
-  }
-  
-  
-  .project:hover .text{
-  opacity: 1;
-  }
-  .project:hover img{
-  opacity: 0.2;
-  filter: blur(8px);
-  }
 
 /* timeLine */
 #timeline{
