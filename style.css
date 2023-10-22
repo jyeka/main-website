@@ -1301,7 +1301,7 @@ body, html {
     z-index: 100;
   }
   
-  #time_text{
+  .time_text{
     color: black;
     position: relative;
     margin: 0;
