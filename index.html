@@ -14,393 +14,393 @@
 
 <body onscroll="hide()">
 
-<!-- Header: background, frc logo top left, our logo in the middle, text under our logo  -->
-<div id="main">
+    <!-- Header: background, frc logo top left, our logo in the middle, text under our logo  -->
+    <div id="main">
 
-    <div class="main-container">
-        <div class="background-top">
-            <img class="background-top-img" src="assets/main/main_background_up.png" alt="background">
-        </div>
+        <div class="main-container">
+            <div class="background-top">
+                <img class="background-top-img" src="assets/main/main_background_up.png" alt="background">
+            </div>
 
-        <div class="background-bottom">
-            <img class="background-bottom-img" src="assets/main/main_background_down.png" alt="background"/>
-        </div>
+            <div class="background-bottom">
+                <img class="background-bottom-img" src="assets/main/main_background_down.png" alt="background"/>
+            </div>
 
-        <div class="farotech-logo-container">
-            <img class="farotech-logo-img" src="assets/main/logo.svg" alt="logo"/>
-            <div class="farotech-logo-text">
-                <h1> FaroTech <br></h1>
-                <h3> Do RoboTy </h3>
+            <div class="farotech-logo-container">
+                <img class="farotech-logo-img" src="assets/main/logo.svg" alt="logo"/>
+                <div class="farotech-logo-text">
+                    <h1> FaroTech <br></h1>
+                    <h3> Do RoboTy </h3>
+                </div>
+            </div>
+            <div class="first-logo-div">
+                <div class="first-logo">
+                    <a href="https://www.firstinspires.org/robotics/frc"><img class="first-logo-img" src="assets/main/frc-logo.png" alt="logo">
+                    </a>
+                </div>
+                <button class="hamburger" onclick="show()">
+                    <i class="fa fa-bars"></i>
+                </button>
             </div>
         </div>
-        <div class="first-logo-div">
-            <div class="first-logo">
-                <a href="https://www.firstinspires.org/robotics/frc"><img class="first-logo-img" src="assets/main/frc-logo.png" alt="logo">
+    </div>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li class="close-x" onclick="hide()"><img class="x-img" src="assets/main/x.svg" alt="x"></li>
+                <li><a href="#sponsors">Sponsorzy</a></li>
+                <li><a href="#whoAreWe">Kim jesteśmy?</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#timeline">Oś czasu</a></li>
+                <li><a href="#meetUs">Poznaj nas</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- Sponsors: sponsors logos in slider -->
+    <div id="sponsors">
+        <div id="sponsorsSlider">
+            <div class="sponsor">
+                <a href="https://bielany.um.warszawa.pl/">
+                    <img src="/assets/sponsors/bielany.png" alt="Bielany" class="pic">
                 </a>
             </div>
-            <button class="hamburger" onclick="show()">
-                <i class="fa fa-bars"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<div class="navigation">
-    <nav>
-        <ul>
-            <li class="close-x" onclick="hide()"><img class="x-img" src="assets/main/x.svg" alt="x"></li>
-            <li><a href="#sponsors">Sponsorzy</a></li>
-            <li><a href="#whoAreWe">Kim jesteśmy?</a></li>
-            <li><a href="#projects">Projekty</a></li>
-            <li><a href="#timeline">Oś czasu</a></li>
-            <li><a href="#meetUs">Poznaj nas</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
-
-</div>
-
-<!-- Sponsors: sponsors logos in slider -->
-<div id="sponsors">
-    <div id="sponsorsSlider">
-        <div class="sponsor">
-            <a href="https://bielany.um.warszawa.pl/">
-                <img src="/assets/sponsors/bielany.png" alt="Bielany" class="pic">
-            </a>
-        </div>
-        <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/first.png" alt="First" class="pic">
-            </a>
-        </div>
-        <div class="sponsor">
-            <a href="https://pol-mare.pl/">
-                <img src="/assets/sponsors/polMare.jpg" alt="Pol Mare" class="pic">
-            </a>
-        </div>
-        <div class="sponsor">
-            <a href="https://www.pb.pl/">
-                <img src="/assets/sponsors/pulsBiznesu.png" alt="Puls Biznesu" class="pic">
-            </a>
-        </div>
-        <div class="sponsor">
-            <a href="https://www.santander.pl/klient-indywidualny/bankowosc-internetowa">
-                <img src="/assets/sponsors/santander.png" alt="Santander" class="pic">
-            </a>
-        </div>
-        <div class="sponsor">
-            <a href="https://stem.pw.edu.pl/">
-                <img src="/assets/sponsors/stem.png" alt="Stem" class="pic">
-            </a>
-        </div>
-        <div class="sponsor">
-            <a href="https://um.warszawa.pl/">
-                <img src="/assets/sponsors/wawa.png" alt="mt. Warszawa" class="pic">
-            </a>
-        </div>
-        <div class="sponsor">
-            <a href="https://www.pw.edu.pl/engpw">
-                <img src="/assets/sponsors/WUT.png" alt="WUT" class="pic">
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- Who Are We: Section with team picture and description -->
-<div id="whoAreWe">
-    <div id="whoAreWe_bg"></div>
-    <h1 id="whoAreWe_h1"> Kim jesteśmy? </h1>
-    <h2 id="whoAreWe_h2"> FaroTech to zespół robotyczny składający się z uczniów z kilku prominentnych warszawskich szkół, by wspólnie rozwijać pasje do mechaniki i spełniać marzenia.
-        Naszym głównym celem jest budowa robota, by następnie wraz z nim wziąć udział w konkursie FIRST Robotics Competition – prestiżowym turnieju o skali globalnej. </h2>
-</div>
-
-<!-- Not valid -->
-<!-- Projects: our projects in slider -->
-<div id="projects">
-    <h2 class="projectsTitle">Nasze projekty</h2>
-
-    <div id="projectsSlider">
-        <div class="project">
-            <img src="assets/projects/helpingHand.png" alt="Helping Hand" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <div class="project">
-            <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <div class="project">
-            <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <div class="project">
-            <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <div class="project">
-            <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <div class="project">
-            <img src="https://picsum.photos/200/300?t=6" alt="" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <div class="project">
-            <img src="https://picsum.photos/200/300?t=7" alt="" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <div class="project">
-            <img src="https://picsum.photos/200/300?t=8" alt="" class="pic">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
-                placeat enim est qui inventore vero quaerat nisi.</p>
-        </div>
-        <script>
-            (function () {
-                function scrollHorizontally(f) {
-
-                    f = window.event || f;
-                    var delta = Math.max(-1, Math.min(1, (f.wheelDelta || -f.detail)));
-                    document.getElementById('projectsSlider').scrollLeft -= (delta * 200); // Multiplied by 40
-                    f.preventDefault();
-                }
-
-                if (document.getElementById('projectsSlider').addEventListener) {
-                    // IE9, Chrome, Safari, Opera
-                    document.getElementById('projectsSlider').addEventListener("mousewheel", scrollHorizontally, false);
-                    // Firefox
-                    document.getElementById('projectsSlider').addEventListener("DOMMouseScroll", scrollHorizontally, false);
-                } else {
-                    // IE 6/7/8
-                    document.getElementById('projectsSlider').attachEvent("onmousewheel", scrollHorizontally);
-                }
-            })();
-        </script>
-    </div>
-</div>
-
-<!-- Timeline: our plans organized in graphic way -->
-<div id="timeline">
-    <h1 id="time_title">Powstanie Zespołu - 08.2022</h1>
-    <div id="time_body">
-        <!-- Orange line going through timeline -->
-        <div id="rtec"></div>
-
-        <div id="time_starting">
-            <img src="/assets/timeline/starting.svg" alt="faro kula" id="faro_ball2">
-        </div>
-
-        <div id="time_line">
-            <div class="text_down" id="d1">
-                <img src="/assets/timeline/line_up.svg" alt="line">
-                <div class="text_contain_down">
-                    <p class="time_text">Działająca baza robota<br>06.2023</p>
-                </div>
+            <div class="sponsor">
+                <a href="https://www.firstinspires.org/robotics/frc">
+                    <img src="/assets/sponsors/first.png" alt="First" class="pic">
+                </a>
             </div>
-            <div class="text_up" id="u1">
-                <div class="text_contain_up">
-                    <p class="time_text">Przeniesienie prac na PW<br>10.2023</p>
-                </div>
-                <img src="/assets/timeline/line_down.svg" alt="line">
+            <div class="sponsor">
+                <a href="https://pol-mare.pl/">
+                    <img src="/assets/sponsors/polMare.jpg" alt="Pol Mare" class="pic">
+                </a>
             </div>
-            <div class="text_down" id="d2">
-                <img src="/assets/timeline/line_up.svg" alt="line">
-                <div class="text_contain_down">
-                    <p class="time_text">Robot z edycji 2022<br>12.2023</p>
-                </div>
+            <div class="sponsor">
+                <a href="https://www.pb.pl/">
+                    <img src="/assets/sponsors/pulsBiznesu.png" alt="Puls Biznesu" class="pic">
+                </a>
             </div>
-            <div class="text_up" id="u2">
-                <div class="text_contain_up">
-                    <p class="time_text">FIRST <br/> kickoff<br>01.2024</p>
-                </div>
-                <img src="/assets/timeline/line_down.svg" alt="line">
+            <div class="sponsor">
+                <a href="https://www.santander.pl/klient-indywidualny/bankowosc-internetowa">
+                    <img src="/assets/sponsors/santander.png" alt="Santander" class="pic">
+                </a>
             </div>
-            <div class="text_down" id="d3">
-                <img src="/assets/timeline/line_up.svg" alt="line">
-                <div class="text_contain_down">
-                    <p class="time_text">Zawody w Stambule<br>03.2024</p>
-                </div>
+            <div class="sponsor">
+                <a href="https://stem.pw.edu.pl/">
+                    <img src="/assets/sponsors/stem.png" alt="Stem" class="pic">
+                </a>
             </div>
-            <div class="text_up" id="u3">
-                <div class="text_contain_up">
-                    <p class="time_text">Finały w Houston<br>04.2024</p>
-                </div>
-                <img src="/assets/timeline/line_down.svg" alt="line">
+            <div class="sponsor">
+                <a href="https://um.warszawa.pl/">
+                    <img src="/assets/sponsors/wawa.png" alt="mt. Warszawa" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.pw.edu.pl/engpw">
+                    <img src="/assets/sponsors/WUT.png" alt="WUT" class="pic">
+                </a>
             </div>
         </div>
     </div>
-</div>
 
-<!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
-<div id="meetUs">
-    <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-            <li class="card" id="card1">
-                <div class="img"><img src="assets/meetUs/team-janP.JPG" alt="1"></div>
-                <h2>Janek Piramidowicz</h2>
-                <span>sssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-mikołaj.JPG" alt="1"></div>
-                <h2>Mikołaj Majewski</h2>
-                <span>ssssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-franek.JPG" alt="1"></div>
-                <h2>Franek</h2>
-                <span>ssssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-nikolasG.JPG" alt="1"></div>
-                <h2>Mikołaj Gerant</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-karol.JPG" alt="1"></div>
-                <h2>Karol</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-tadek.JPG" alt="1"></div>
-                <h2>Tadeusz</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-angelica.jpeg" alt="1"></div>
-                <h2>Angelica</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-filip.JPG" alt="1"></div>
-                <h2>Filip</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-przemek.JPG" alt="1"></div>
-                <h2>Przemek</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-zofiaMal.JPG" alt="1"></div>
-                <h2>Zosia</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-maja.JPG" alt="1"></div>
-                <h2>Maja</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-jagna.jpeg" alt="1"></div>
-                <h2>Jagna</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-michałK.jpeg" alt="1"></div>
-                <h2>Michał Kłosiński</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-zuzia.jpeg" alt="1"></div>
-                <h2>Zuzia</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-ania.jpeg" alt="1"></div>
-                <h2>Zosia</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-zosiaMar.jpeg" alt="1"></div>
-                <h2>Zosia</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-ignacy.jpeg" alt="1"></div>
-                <h2>Ignacy</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-janekŁ.jpeg" alt="1"></div>
-                <h2>Janek Ł</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-kacper.JPG" alt="1"></div>
-                <h2>Kacper</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-kamil.JPG" alt="1"></div>
-                <h2>Kamil</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-mateusz.jpeg" alt="1"></div>
-                <h2>Mateucz</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-michałD.jpeg" alt="1"></div>
-                <h2>Michał</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-miłosz.jpeg" alt="1"></div>
-                <h2>Miłosz</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-piotrek.jpeg" alt="1"></div>
-                <h2>Piotrek</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-            <li class="card">
-                <div class="img"><img src="assets/meetUs/team-tomekŚ.jpeg" alt="1"></div>
-                <h2>Tomek</h2>
-                <span>ssssssssssssssssssssssssssssss</span>
-            </li>
-
-        </ul>
-        <i id="right" class="fa-solid fa-angle-right"></i>
-    </div>
-</div>
-
-<!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
-<div id="contact">
-
-    <div id="contact_logo">
-        <img id="logo" src="assets/contact/logo_white.svg" alt="Logo naszego zespołu">
+    <!-- Who Are We: Section with team picture and description -->
+    <div id="whoAreWe">
+        <div id="whoAreWe_bg"></div>
+        <h1 id="whoAreWe_h1"> Kim jesteśmy? </h1>
+        <h2 id="whoAreWe_h2"> FaroTech to zespół robotyczny składający się z uczniów z kilku prominentnych warszawskich szkół, by wspólnie rozwijać pasje do mechaniki i spełniać marzenia.
+            Naszym głównym celem jest budowa robota, by następnie wraz z nim wziąć udział w konkursie FIRST Robotics Competition – prestiżowym turnieju o skali globalnej. </h2>
     </div>
 
-    <div id="contact_contact">
-        Kontakt zespołu <br/>
-        <a href="mailto: first.farotech@gmail.com" target="_blank">
-            first.farotech@gmail.com</a> <br/> <br/>
-        Jan Piramidowicz <br/>
-        <a href="mailto: jj.piramidowicz@gmail.com" target="_blank">
-            jj.piramidowicz@gmail.com</a> <br/>
-        +48 696 960 865
+    <!-- Not valid -->
+    <!-- Projects: our projects in slider -->
+    <div id="projects">
+        <h2 class="projectsTitle">Nasze projekty</h2>
+
+        <div id="projectsSlider">
+            <div class="project">
+                <img src="assets/projects/helpingHand.png" alt="Helping Hand" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/200/300?t=6" alt="" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/200/300?t=7" alt="" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/200/300?t=8" alt="" class="pic">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt nobis recusandae
+                    placeat enim est qui inventore vero quaerat nisi.</p>
+            </div>
+            <script>
+                (function () {
+                    function scrollHorizontally(f) {
+
+                        f = window.event || f;
+                        var delta = Math.max(-1, Math.min(1, (f.wheelDelta || -f.detail)));
+                        document.getElementById('projectsSlider').scrollLeft -= (delta * 200); // Multiplied by 40
+                        f.preventDefault();
+                    }
+
+                    if (document.getElementById('projectsSlider').addEventListener) {
+                        // IE9, Chrome, Safari, Opera
+                        document.getElementById('projectsSlider').addEventListener("mousewheel", scrollHorizontally, false);
+                        // Firefox
+                        document.getElementById('projectsSlider').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+                    } else {
+                        // IE 6/7/8
+                        document.getElementById('projectsSlider').attachEvent("onmousewheel", scrollHorizontally);
+                    }
+                })();
+            </script>
+        </div>
     </div>
 
-    <div id="contact_media">
-        <a href="https://www.youtube.com/@firstfarotech/featured" target="_blank">
-            <img id="yt_logo" src="assets/contact/youtube.png" alt="Nasz kanał na Youtube"/>
-        </a>
+    <!-- Timeline: our plans organized in graphic way -->
+    <div id="timeline">
+        <h1 id="time_title">Powstanie Zespołu - 08.2022</h1>
+        <div id="time_body">
+            <!-- Orange line going through timeline -->
+            <div id="rtec"></div>
 
-        <a href="http://www.instagram.com">
-            <img id="ig_logo" src="assets/contact/instagram.png" alt="Nasz Instagram" target="_blank">
-        </a>
+            <div id="time_starting">
+                <img src="/assets/timeline/starting.svg" alt="faro kula" id="faro_ball2">
+            </div>
 
-        <a href="https://www.tiktok.com/@farotech_official">
-            <img id="tt_logo" src="assets/contact/tiktok.png" alt="Nasz Tiktok" target="_blank">
-        </a>
+            <div id="time_line">
+                <div class="text_down" id="d1">
+                    <img src="/assets/timeline/line_up.svg" alt="line">
+                    <div class="text_contain_down">
+                        <p class="time_text">Działająca baza robota<br>06.2023</p>
+                    </div>
+                </div>
+                <div class="text_up" id="u1">
+                    <div class="text_contain_up">
+                        <p class="time_text">Przeniesienie prac na PW<br>10.2023</p>
+                    </div>
+                    <img src="/assets/timeline/line_down.svg" alt="line">
+                </div>
+                <div class="text_down" id="d2">
+                    <img src="/assets/timeline/line_up.svg" alt="line">
+                    <div class="text_contain_down">
+                        <p class="time_text">Robot z edycji 2022<br>12.2023</p>
+                    </div>
+                </div>
+                <div class="text_up" id="u2">
+                    <div class="text_contain_up">
+                        <p class="time_text">FIRST <br/> kickoff<br>01.2024</p>
+                    </div>
+                    <img src="/assets/timeline/line_down.svg" alt="line">
+                </div>
+                <div class="text_down" id="d3">
+                    <img src="/assets/timeline/line_up.svg" alt="line">
+                    <div class="text_contain_down">
+                        <p class="time_text">Zawody w Stambule<br>03.2024</p>
+                    </div>
+                </div>
+                <div class="text_up" id="u3">
+                    <div class="text_contain_up">
+                        <p class="time_text">Finały w Houston<br>04.2024</p>
+                    </div>
+                    <img src="/assets/timeline/line_down.svg" alt="line">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <!-- Meet us: team members gallery in slider -->
+    <div id="meetUs">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card" id="card1">
+                    <div class="img"><img src="assets/meetUs/team-janP.JPG" alt="1"></div>
+                    <h2>Janek Piramidowicz</h2>
+                    <span>sssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-mikołaj.JPG" alt="1"></div>
+                    <h2>Mikołaj Majewski</h2>
+                    <span>ssssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-franek.JPG" alt="1"></div>
+                    <h2>Franek</h2>
+                    <span>ssssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-nikolasG.JPG" alt="1"></div>
+                    <h2>Mikołaj Gerant</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-karol.JPG" alt="1"></div>
+                    <h2>Karol</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-tadek.JPG" alt="1"></div>
+                    <h2>Tadeusz</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-angelica.jpeg" alt="1"></div>
+                    <h2>Angelica</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-filip.JPG" alt="1"></div>
+                    <h2>Filip</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-przemek.JPG" alt="1"></div>
+                    <h2>Przemek</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-zofiaMal.JPG" alt="1"></div>
+                    <h2>Zosia</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-maja.JPG" alt="1"></div>
+                    <h2>Maja</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-jagna.jpeg" alt="1"></div>
+                    <h2>Jagna</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-michałK.jpeg" alt="1"></div>
+                    <h2>Michał Kłosiński</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-zuzia.jpeg" alt="1"></div>
+                    <h2>Zuzia</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-ania.jpeg" alt="1"></div>
+                    <h2>Zosia</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-zosiaMar.jpeg" alt="1"></div>
+                    <h2>Zosia</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-ignacy.jpeg" alt="1"></div>
+                    <h2>Ignacy</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-janekŁ.jpeg" alt="1"></div>
+                    <h2>Janek Ł</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-kacper.JPG" alt="1"></div>
+                    <h2>Kacper</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-kamil.JPG" alt="1"></div>
+                    <h2>Kamil</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-mateusz.jpeg" alt="1"></div>
+                    <h2>Mateucz</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-michałD.jpeg" alt="1"></div>
+                    <h2>Michał</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-miłosz.jpeg" alt="1"></div>
+                    <h2>Miłosz</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-piotrek.jpeg" alt="1"></div>
+                    <h2>Piotrek</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="assets/meetUs/team-tomekŚ.jpeg" alt="1"></div>
+                    <h2>Tomek</h2>
+                    <span>ssssssssssssssssssssssssssssss</span>
+                </li>
+
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+
+    <!-- Contact" Here's how to contact us -->
+    <div id="contact">
+
+        <div id="contact_logo">
+            <img id="logo" src="assets/contact/logo_white.svg" alt="Logo naszego zespołu">
+        </div>
+
+        <div id="contact_contact">
+            Napisz do nas! <br/>
+            <a href="mailto: first.farotech@gmail.com" target="_blank">
+                first.farotech@gmail.com</a> <br/> <br/>
+            Jan Piramidowicz <br/>
+            <a href="mailto: jj.piramidowicz@gmail.com" target="_blank">
+                jj.piramidowicz@gmail.com</a> <br/>
+            +48 696 960 865
+        </div>
+
+        <div id="contact_media">
+            <a href="https://www.youtube.com/@firstfarotech/featured" target="_blank">
+                <img id="yt_logo" src="assets/contact/youtube.png" alt="Nasz kanał na Youtube"/>
+            </a>
+
+            <a href="http://www.instagram.com">
+                <img id="ig_logo" src="assets/contact/instagram.png" alt="Nasz Instagram" target="_blank">
+            </a>
+
+            <a href="https://www.tiktok.com/@farotech_official">
+                <img id="tt_logo" src="assets/contact/tiktok.png" alt="Nasz Tiktok" target="_blank">
+            </a>
+        </div>
+    </div>
 </body>
 </html>
