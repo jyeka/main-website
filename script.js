@@ -75,3 +75,22 @@ const infiniteScroll = () => {
 }
 carousel.addEventListener("scroll", infiniteScroll);
 
+(function () {
+    function scrollHorizontally(f) {
+
+        f = window.event || f;
+        var delta = Math.max(-1, Math.min(1, (f.wheelDelta || -f.detail)));
+        document.getElementById('sponsorsSlider').scrollLeft -= (delta * 400); // Multiplied by 40
+        f.preventDefault();
+    }
+
+    if (document.getElementById('sponsorsSlider').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('sponsorsSlider').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('sponsorsSlider').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('sponsorsSlider').attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();

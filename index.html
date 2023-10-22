@@ -13,11 +13,11 @@
 </head>
 
 <body onscroll="hide()">
-<!-- header: background, frc logo top left, our logo in the middle, text under our logo  -->
+
+<!-- Header: background, frc logo top left, our logo in the middle, text under our logo  -->
 <div id="main">
 
     <div class="main-container">
-
         <div class="background-top">
             <img class="background-top-img" src="assets/main/main_background_up.png" alt="background">
         </div>
@@ -43,10 +43,7 @@
             </button>
         </div>
     </div>
-
-
 </div>
-
 <div class="navigation">
     <nav>
         <ul>
@@ -62,73 +59,50 @@
 
 </div>
 
-
+<!-- Sponsors: logos in slider -->
 <div id="sponsors">
-    <h2 class="sponsorsTitle">Sponsorzy</h2>
-
     <div id="sponsorsSlider">
         <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/bielany.png" alt="" class="pic">
+            <a href="https://bielany.um.warszawa.pl/">
+                <img src="/assets/sponsors/bielany.png" alt="Bielany" class="pic">
             </a>
         </div>
         <div class="sponsor">
             <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/first.png" alt="" class="pic">
+                <img src="/assets/sponsors/first.png" alt="First" class="pic">
             </a>
         </div>
         <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/polMare.jpg" alt="" class="pic">
+            <a href="https://pol-mare.pl/">
+                <img src="/assets/sponsors/polMare.jpg" alt="Pol Mare" class="pic">
             </a>
         </div>
         <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/pulsBiznesu.png" alt="" class="pic">
+            <a href="https://www.pb.pl/">
+                <img src="/assets/sponsors/pulsBiznesu.png" alt="Puls Biznesu" class="pic">
             </a>
         </div>
         <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/santander.png" alt="" class="pic">
+            <a href="https://www.santander.pl/klient-indywidualny/bankowosc-internetowa">
+                <img src="/assets/sponsors/santander.png" alt="Santander" class="pic">
             </a>
         </div>
         <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/stem.png" alt="" class="pic">
+            <a href="https://stem.pw.edu.pl/">
+                <img src="/assets/sponsors/stem.png" alt="Stem" class="pic">
             </a>
         </div>
         <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/wawa.png" alt="" class="pic">
+            <a href="https://um.warszawa.pl/">
+                <img src="/assets/sponsors/wawa.png" alt="mt. Warszawa" class="pic">
             </a>
         </div>
         <div class="sponsor">
-            <a href="https://www.firstinspires.org/robotics/frc">
-                <img src="/assets/sponsors/WUT.png" alt="" class="pic">
+            <a href="https://www.pw.edu.pl/engpw">
+                <img src="/assets/sponsors/WUT.png" alt="WUT" class="pic">
             </a>
         </div>
     </div>
-    <script>
-        (function () {
-            function scrollHorizontally(f) {
-
-                f = window.event || f;
-                var delta = Math.max(-1, Math.min(1, (f.wheelDelta || -f.detail)));
-                document.getElementById('sponsorsSlider').scrollLeft -= (delta * 400); // Multiplied by 40
-                f.preventDefault();
-            }
-
-            if (document.getElementById('sponsorsSlider').addEventListener) {
-                // IE9, Chrome, Safari, Opera
-                document.getElementById('sponsorsSlider').addEventListener("mousewheel", scrollHorizontally, false);
-                // Firefox
-                document.getElementById('sponsorsSlider').addEventListener("DOMMouseScroll", scrollHorizontally, false);
-            } else {
-                // IE 6/7/8
-                document.getElementById('sponsorsSlider').attachEvent("onmousewheel", scrollHorizontally);
-            }
-        })();
-    </script>
 </div>
 
 <!-- *Napiszcie opis tej sekcji. Co zawiera itp. Angielski mile widziany :) -->
@@ -252,7 +226,7 @@
             </div>
             <div class="tekst_gora" id="g3">
                 <div class="tekst_div_palka_gora">
-                    <p id="time_text">Finały w Houston<br>04.2024</p>
+                    <p class="time_text">Finały w Houston<br>04.2024</p>
                 </div>
                 <img src="/assets/timeline/line_down.svg" alt="palka">
             </div>
