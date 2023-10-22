@@ -1176,7 +1176,7 @@ body, html {
     margin-top: 150px;
   }
   
-  #time_tytul{
+  #time_title{
     position: relative;
     font-size: 376%;
     left: 190px;
@@ -1184,7 +1184,7 @@ body, html {
     top:65px;
     margin:0;
   }
-  #slupek{
+  #time_body{
     width: 120%;
     height: 90.55px;
     position: relative;
@@ -1231,7 +1231,7 @@ body, html {
     transform: translateY(-50%);
     margin: auto 0;
   }
-  #trzymak{
+  #time_line{
     left: 30px;
     display: flex;
     flex-direction: row;
@@ -1245,18 +1245,18 @@ body, html {
     height: 700px;
     
   }
-  .tekst_dol{ 
+  .text_down{
     z-index: 1;
     margin-top: 255px;  
   }
-  .tekst_dol img{  
+  .text_down img{
     z-index: 1;
   }
-  .tekst_gora{
+  .text_up{
     z-index: 1;
     margin-bottom: 263px;      
   }
-  .tekst_div_palka_dol{
+  .text_contain_down{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -1268,7 +1268,7 @@ body, html {
     position: relative;
     margin-bottom: 30px;
   }
-  .tekst_div_palka_gora{
+  .text_contain_up{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -1293,14 +1293,14 @@ body, html {
     scale: 50%;
   }
   
-  #gowno1{
+  #time_starting{
     position: absolute;
     height: 400px;
   }
   
   
   @media only screen and (max-width: 1233px) and (min-width:554px){
-    #time_tytul{
+    #time_title{
       position: relative;
       font-size: 278%;
       left: 77px;
@@ -1315,7 +1315,7 @@ body, html {
         top: -414px;
         scale: 62%;
         }
-        #slupek {
+        #time_body {
         height: 90.55px;
         top: 450px;
         height: 53.5px;
@@ -1325,7 +1325,7 @@ body, html {
         left: 180px;
         left: 38px;
         }
-        #trzymak {
+        #time_line {
         width: 70%;
         margin-left: 200px;
         top: -300px;
@@ -1335,31 +1335,31 @@ body, html {
         width: 72%;
   margin-left: 46px;
         }
-        #trzymak > div {
+        #time_line > div {
             /* width: 30px; */
             width: 11vw;
           }
-        #trzymak img{
+        #time_line img{
             scale: 50%;
         }
-        #trzymak img {
+        #time_line img {
             scale: 60%;
         }            
-        .tekst_gora {           
+        .text_up {
             margin-bottom: 202px;
         }
-        .tekst_dol {
+        .text_down {
             margin-top: 198px;
         }
         
-        .tekst_div_palka_gora {
+        .text_contain_up {
             width: 109px;
             height: 74px;
             left: 50%;
             transform: translateX(-50%);
             top: 45px;
         }
-        .tekst_div_palka_dol {
+        .text_contain_down {
           width: 109px;
           height: 74px;
           top: -66px;
@@ -1391,7 +1391,7 @@ body, html {
   }
   
   
-  #time_tytul{
+  #time_title{
     position: relative;
     font-size: 136%;
     left: 16px;
@@ -1400,7 +1400,7 @@ body, html {
     margin:0;
   }
   
-  #gowno1 {
+  #time_starting {
     /* height: 400px; */
     height: 391px;
   }
@@ -1414,7 +1414,7 @@ body, html {
   }
   
   
-  #slupek {
+  #time_body {
     /* width: 120%; */
     /* height: 90.55px; */
     /* top: 450px; */
@@ -1430,10 +1430,10 @@ body, html {
     height: 4px;
     left: 25px;
   }
-  .tekst_gora img{
+  .text_up img{
     scale: 40%;
   }
-  .tekst_dol img{
+  .text_down img{
     scale: 40%;
   }
   
@@ -1448,7 +1448,7 @@ body, html {
   
   
   
-  #trzymak {
+  #time_line {
     /* left: 30px; */
     /* justify-content: space-around; */
     /* width: 70%; */
@@ -1463,40 +1463,40 @@ body, html {
     height: 483px;
   }
   
-  .tekst_dol {
+  .text_down {
     /* margin-top: 255px; */
     margin-top: -80px;
     width: 79px;
     text-align: center;
   }
   
-  .tekst_gora {
+  .text_up {
     /* margin-bottom: 263px; */
     margin-bottom: 188px;
   }
-  #trzymak>div{
+  #time_line>div{
     width: 30px;
   }
   
   /* styles.css | http://localhost:3000/styles.css */
   
   
-    #trzymak {
+    #time_line {
       /* left: 50px; */
       /* margin-left: -32px; */
       left: 75px;
       margin-left: -39px;
     }
-    #trzymak > div {
+    #time_line > div {
       /* width: 30px; */
       width: 11vw;
     }
     
-    .tekst_dol {
+    .text_down {
       /* margin-top: -80px; */
       margin-top: 6px;
     }
-    .tekst_div_palka_dol {
+    .text_contain_down {
         /* padding: 10px; */
         /* width: 130px; */
         /* height: 80px; */
@@ -1508,12 +1508,12 @@ body, html {
         left: -9px;
   }
     
-    .tekst_gora {
+    .text_up {
     margin-bottom: 188px;
     margin-bottom: 243px;
     }
   
-    .tekst_div_palka_gora {
+    .text_contain_up {
     padding: 10px;
     width: 130px;
     height: 80px;
