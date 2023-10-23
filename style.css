@@ -149,7 +149,6 @@ ul {
   overscroll-behavior-inline: contain;
   background-color: var(--gray_object);
   width: 100%;
-  height: max-content;
   scroll-behavior: smooth;
   height: min-content;
   }
@@ -447,7 +446,6 @@ ul {
     padding: 50px;
     /* padding-top: 500px; */
     height: 500px;
-    margin-top: 150px;
 }
 #time_title{
     position: relative;
@@ -664,12 +662,6 @@ ul {
     }
 
     #time_line {
-        /* left: 30px; */
-        /* justify-content: space-around; */
-        /* width: 70%; */
-        /* margin-left: 200px; */
-        /* top: -300px; */
-        /* height: 700px; */
         left: 50px;
         justify-content: space-evenly;
         width: 74%;
@@ -736,149 +728,6 @@ ul {
     }
 }
 
-/* meetUs */
-#meetUs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 0 35px;
-    position: relative;
-}
-.wrapper{
-    transform: translate(0, 30%);
-    max-width: 1500px;
-    width: 90%;
-    position: relative;
-}
-.wrapper i{
-    color: black;
-    height: 50px;
-    width: 50px;
-    background: #fff;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    font-size: 1.25rem;
-    transform: translate(-50%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.wrapper i:first-child{
-    left: 0;
-}
-.wrapper i:last-child{
-    right: -40px;
-}
-.wrapper .carousel{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3));
-    gap: 16px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar{
-    display: none;
-}
-.carousel :where(.card, .img){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel.no-transition{
-    scroll-behavior: auto;
-}
-.carousel .card{
-    scroll-snap-align: start;
-    height: 342px;
-    list-style: none;
-    background: #fff;
-    border-radius: 8px;
-    display: flex;
-    cursor: pointer;
-    padding-bottom: 15px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.card .img{
-    background: #FF451A;
-    width: 148px;
-    height: 148px;
-    border-radius: 50%;
-}
-.card .img img{
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
-}
-.card h2{
-    font-size: 1.56rem;
-    font-weight: 500;
-    margin: 30px 10px 5px;
-    color: black;
-}
-.card span{
-    color: #6a6d78;
-    font-size: 1.31rem;
-}
-@media screen and (max-width: 1400px){
-    .wrapper .carousel{
-        grid-auto-columns: calc((100% / 1.96));
-    }
-}
-@media screen and (max-width: 750px){
-    .wrapper .carousel{
-        grid-auto-columns: 108%;
-    }
-}
-@media screen and (max-width: 600px){
-    .wrapper .carousel{
-        grid-auto-columns: 110%;
-    }
-}
-@media screen and (max-device-width: 480px) and (max-device-width: 912px){
-    .carousel .card{
-        height: 75vw;
-    }
-    .wrapper .carousel{
-        grid-auto-columns: 104%;
-    }
-
-    .wrapper i:first-child{
-        transform: scale(2.5);
-        left: -20px;
-    }
-
-    .wrapper i:last-child{
-        transform: scale(2.5);
-        right: -10px;
-    }
-
-    .card .img{
-        transform: scale(1.8) translate(0, -20%);
-    }
-
-    .card h2{
-        font-size: 4vh;
-        font-weight: 30;
-        margin: 30px 10px 5px;
-        color: black;
-    }
-
-    .card span{
-        color: #6a6d78;
-        font-size: 2vh;
-    }
-}
-
 /* contact */
 #contact {
 	background-color: rgb(26, 26, 26);
@@ -890,7 +739,7 @@ ul {
 	max-width: 100%;
 	min-width: 1000px;
 	width: 100%;
-	margin: 0 auto;
+	margin-top: 22vh;
 	padding: 2vw;
 }
 #contact_logo{
