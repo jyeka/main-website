@@ -72,6 +72,9 @@ body {
     line-height: 1vh;
     top: 0;
 }
+.farotech-logo-img{
+   height: 70vh;
+}
 a, button {
     cursor: pointer;
 }
