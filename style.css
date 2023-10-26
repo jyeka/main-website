@@ -72,9 +72,6 @@ body {
     line-height: 1vh;
     top: 0;
 }
-.farotech-logo-img{
-   height: 70vh;
-}
 a, button {
     cursor: pointer;
 }
@@ -612,6 +609,40 @@ ul {
     #timeline{
         margin-top: -1px;
     }
+    #faro_ball2{
+
+    left: -69px;
+    top: -412px;
+    }
+    #time_body{
+        height: 50.5px;
+    top: 431px;
+    }
+    #faro_ball2 {
+        scale: 50%;
+        scale: 61%;
+    }
+    .text_down {
+        margin-top: 198px;
+        margin-top: 159px;
+    }
+    .text_up {
+        margin-bottom: 202px;
+        margin-bottom: 237px;
+    }
+    #rtec {
+        left: 180px;
+        left: 82px;
+    }
+    #time_line {
+        margin-left: 200px;
+        margin-left: 54px;
+        width:74%;
+    }
+    .time_text{
+        font-size: 118%;
+    }
+
 
 
 }
@@ -619,6 +650,8 @@ ul {
     #timeline{
         margin-top: -218px;
     }
+
+    
     #time_title{
         position: relative;
         font-size: 136%;
@@ -711,7 +744,7 @@ ul {
         left: -9px;
     }
     .text_up {
-        margin-bottom: 188px;
+        margin-bottom: 249px;
     }
     .text_contain_up {
         padding: 10px;
@@ -720,15 +753,20 @@ ul {
         top: 59px;
         left: -8px;
     }
-    #time_text{
+    .time_text{
         color: black;
         position: relative;
         margin: 0;
         top:-7px;
         left: -1px;
-        font-size: 10px;
+        font-size: 66%;
         text-align: center;
     }
+
+    .background-bottom  {
+        font-size: 66%;
+    }
+
 }
 
 /* contact */
@@ -785,4 +823,96 @@ margin-bottom: 1vw;
 width: 12vh;
 height: 12vh;
 margin-bottom: 1vw;
+}
+
+
+@media only screen and (max-width: 957px) {
+    
+/* style.css | http://127.0.0.1:5500/main-website-main/style.css */
+
+#contact {
+    /* display: flex; */
+    min-width: unset;
+    /* margin-top: 22vh; */
+    margin-top: 25vh;
+    position: relative;
+    height: 200px;
+  }
+  
+  #contact_logo {
+    width: 200px;
+  }
+  
+  #contact_contact {
+    /* text-align: left; */
+    text-align: right;
+    position: absolute;
+    top: 83px;
+    font-size: 4vw;
+    right: 37px;
+  }
+  
+  #logo {
+    /* max-width: 40vw; */
+    max-width: 34vw;
+    position: absolute;
+    top: 51px;
+    left: 14px;
+  }
+  
+  #contact_media {
+    /* flex-direction: column; */
+    /* align-items: flex-end; */
+    /* margin-right: 7vw; */
+    /* margin-left: 7vw; */
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 333px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95vw;
+    justify-content: space-evenly;
+    min-width: none;
+  }
+  
+  #yt_logo {
+    /* margin-top: 7vh; */
+    /* margin-bottom: 1vw; */
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+  }
+  #contact_media {
+    position: absolute;
+    top: 333px;
+    left: 50%;
+    width: 95vw;
+    position: relative;
+    top: 121px;
+    left: 16%;
+    width: 53vw;
+    margin-top: 29%;
+    }
+    #contact {
+    height: 200px;
+    height: 407px;
+
+    }
+    body{
+        height: calc(100vh+200px);
+    }
+    .farotech-logo-img{
+        scale: 78%;
+    }
+
+  
+}
+#contact {
+    width: 96%;
+    margin-top: 36vh;
+}
+
+
+#sponsors {
+    margin-top: 31vh;
 }
