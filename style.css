@@ -26,27 +26,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.background-top {
-    width: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.background-top-img {
-    pointer-events: none;
-    user-select: none;
-}
-.background-bottom-img {
-    float: right;
-    pointer-events: none;
-    user-select: none;
-}
-.background-bottom {
-    width: 10%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 .first-logo-div{
     height: 100vh;
     display: flex;
