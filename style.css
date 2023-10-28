@@ -217,6 +217,8 @@ ul {
     opacity: 0;
     transition: opacity 0.25s;
 }
+
+/* */
 #whoAreWe_h2 {
     position: absolute;
     font-weight: bold;
@@ -230,6 +232,7 @@ ul {
     transition: opacity 0.5s;
     text-align: center;
 }
+
 #whoAreWe:hover > #whoAreWe_bg{
     filter: blur(3px) brightness(60%);
 }
