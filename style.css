@@ -547,9 +547,9 @@ ul {
     color: black;
     position: relative;
     margin: 0;
-    top:-8px;
     left: -1px;
     text-align: center;
+    vertical-align: center;
     font-size: 21px;
 }
 #timeline>{
