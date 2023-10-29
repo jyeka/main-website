@@ -26,27 +26,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.background-top {
-    width: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.background-top-img {
-    pointer-events: none;
-    user-select: none;
-}
-.background-bottom-img {
-    float: right;
-    pointer-events: none;
-    user-select: none;
-}
-.background-bottom {
-    width: 10%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 .first-logo-div{
     height: 100vh;
     display: flex;
@@ -217,6 +197,7 @@ ul {
     opacity: 0;
     transition: opacity 0.25s;
 }
+
 #whoAreWe_h2 {
     position: absolute;
     font-weight: bold;
@@ -228,7 +209,9 @@ ul {
     font-size: 2.3vw;
     opacity: 0;
     transition: opacity 0.5s;
+    text-align: center;
 }
+
 #whoAreWe:hover > #whoAreWe_bg{
     filter: blur(3px) brightness(60%);
 }
