@@ -13,12 +13,42 @@
     <script src="script.js" defer></script>
 </head>
 
-<body onscroll="hide()">
+<body onscroll="hide(); scroll()">
 
     <!-- Header: background, frc logo top left, our logo in the middle, text under our logo  -->
     <div id="main">
+        <nav id="nav1" class="ontop">
+            <div class="first-logo-div">
+                <div class="first-logo">
+                    <a href="https://www.firstinspires.org/robotics/frc"><img class="first-logo-img" src="assets/main/frc-logo.png" alt="logo">
+                    </a>
+                </div>
+                
+            </div>
+            <button class="hamburger" onclick="show()">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- <div id="menu-menu">
+                    <div id="menu_div" class="hidden">
+                        
+                    </div>
+                    <button onclick="show_menu()">MENU</button>
+            </div> -->
+            
+                
+            <!-- <img src="https://placekitten.com/200/141" onclick="show_menu()"/> -->
+            
+        </nav>
 
         <div class="main-container">
+            <div class="background-top">
+                <img class="background-top-img" src="assets/main/main_background_up.png" alt="background">
+            </div>
+
+            <div class="background-bottom">
+                <img class="background-bottom-img" src="assets/main/main_background_down.png" alt="background"/>
+            </div>
 
             <div class="farotech-logo-container">
                 <img class="farotech-logo-img" src="assets/main/logo.svg" alt="logo"/>
@@ -27,15 +57,7 @@
                     <h3> Do RoboTy </h3>
                 </div>
             </div>
-            <div class="first-logo-div">
-                <div class="first-logo">
-                    <a href="https://www.firstinspires.org/robotics/frc"><img class="first-logo-img" src="assets/main/frc-logo.png" alt="logo">
-                    </a>
-                </div>
-                <button class="hamburger" onclick="show()">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
+            
         </div>
     </div>
     <div class="navigation">
@@ -116,7 +138,7 @@
 
 
     <div id="sponsors">
-        <div id="sponsorsSlider">
+        <!-- <div id="sponsorsSlider">
             <div class="sponsor">
                 <a href="https://www.pw.edu.pl/engpw">
                     <img src="/main-website-main/assets/sponsors/WUT.png" alt="WUT" class="pic">
@@ -157,8 +179,7 @@
                     <img src="/main-website-main/assets/sponsors/stem.png" alt="Stem" class="pic">
                 </a>
             </div>
-        </div>
-    </div>
+        </div> -->
 
 
 
@@ -194,6 +215,25 @@
 
         
     </div>
+    <script>
+        function scroll(){
+        var a = window.scrollY;
+        var nav = document.getElementById("nav1");
+        // console.log(a);
+
+        if (a > 0) {
+            nav.classList.add("scrolled");
+            nav.classList.remove("ontop");
+            // $('#nav').addClass('solid-nav');
+
+        } else {
+            nav.classList.remove("scrolled");
+            nav.classList.add("ontop");
+            // $('#nav').removeClass('solid-nav');
+        }
+}
+
+    </script>
     
 </body>
 </html>
